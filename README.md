@@ -12,7 +12,7 @@ Simulador de calculo de médias para cursos da modalidade Técnico Superior.
 
 <div>
     <img align="center" alt="Reactjs" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg">
-    <img align="center" alt="Tailwindcss" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" >
+    <img align="center" alt="Tailwindcss" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" >
     <img align="center" alt="TypeScript" height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" >
 </div>
 
