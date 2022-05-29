@@ -44,7 +44,6 @@ console.log(score())
         :
         <p className="text-red-700  text-xl">Média =  {finalScore} Exame!</p>
       }
-      
     </form>
   )
 }
