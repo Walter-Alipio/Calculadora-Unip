@@ -18,8 +18,9 @@ export function Gestao({calcMedia}: Props){
   const [valueProva, setValueProva] = useState('');
   const [valuePim, setValuePim] = useState('');
 
-  const handleChange = (event: React.FormEvent)=> {
+  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>)=> {
     event.preventDefault()
+    console.log(event.target.value)
     const result = event.target.value.replace(/[A-Za-z!@#$%*():;?/]/g, '');
     return result;
   };
