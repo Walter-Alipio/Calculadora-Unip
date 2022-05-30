@@ -1,30 +1,23 @@
 import { useState } from "react";
-import { setValue } from "../../types/setValue";
+import { InputFields } from "../../types/inputFields";
+import { propsMedias } from "../../types/propsMedias";
 import { Input } from "../input";
 
 
-interface InputFields{
-  name: string,
-  id: string,
-  value: string,
-  setValue:  React.Dispatch<React.SetStateAction<string>>
-}
-interface Props {
-  calcMedia: ({valueAva, valuePim, valueProva}: setValue)=> void
-}
 
-export function Gestao({calcMedia}: Props){
+
+export function Gestao({calcMedia}: propsMedias){
   const [valueAva, setValueAva] = useState('');
   const [valueProva, setValueProva] = useState('');
   const [valuePim, setValuePim] = useState('');
 
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>)=> {
     event.preventDefault()
-    console.log(event.target.value)
+  //permite apenas o registro dos caracteres ",." e números
     const result = event.target.value.replace(/[A-Za-z!@#$%*():;?/]/g, '');
     return result;
   };
-
+//array com o conteúdo de cada input a ser renderizado 
   const inputFields: InputFields[] = [
     {
       name: 'Nota AVA',
